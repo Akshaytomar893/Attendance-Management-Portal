@@ -1,0 +1,82 @@
+.header{
+    text-align: center;
+    color: azure;
+    font-family: 'Cinzel', serif;
+    
+}
+
+.abes-logo{
+    float: right;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    
+}
+body { 
+    background: url("../images/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.circle{
+    background-color: brown;
+    height: 180px;
+    width: 180px;
+    border: 2px ssolid black;
+    border-radius: 50%;
+    margin: 30px;
+    
+}
+.home-menu{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.hm-link{
+    position: relative;
+    top: 45px;
+    text-align: center;
+    
+}
+.hm-link a:any-link{
+    color: azure;
+    font-weight: bold;
+    font-size: 110%;
+}
+#hml-single{
+    position: relative !important;
+    top: 65px !important;
+}
+hr.rule{
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 1px solid gray;
+    border-radius: 90%;
+}
+#hod{
+    position: relative;
+    top: -41px;
+    left: -10px;
+    z-index: 2;
+}
+#student{
+    position: relative;
+    top: -146px;
+    left: -37px;
+    z-index: 2;
+}
+#faculty{
+    position: relative;
+    top: -146px;
+    left: -37px;
+    z-index: 2;
+}
+#team{
+    position: relative;
+    top: -111px;
+    left: -38px;
+    z-index: 2;
+}
