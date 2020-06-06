@@ -12,42 +12,78 @@
         <link rel="stylesheet" type="text/css" href="../AMP/jquery-ui/jquery-ui.css">
         <link rel="stylesheet" type="text/css" href="../AMP/bootstrap/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-
-        <style>
-            .header{
-                text-align: center;
-                color: azure;
-                font-family: 'Cinzel', serif;
-                
-            }
-           
-            .abes-logo{
-                float: right;
-            }
-            body{
-                padding: 0px;
-                margin: 0px;
-            }
-            
-            
-        </style>
-
+        <link rel="stylesheet" type="text/css" href="files/styles.css">
+        
     </head>
 
-    <body>
+    <body >
         
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="col-sm-2">
-               <img src="images/logo/amp logo1.png" alt="amp logo" width="140px">
-            </div>
-            <div class="col-sm-8 header">
-                <h1 >Attendance &nbsp;  Management &nbsp; Portal</h1>
-            </div>
-            <div class="col-sm-2 ">
-                <img src="images/logo/abes logo.png" alt="abes logo" width="60px" class="abes-logo">
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="col-sm-2">
+           <img src="images/logo/amp logo1.png" alt="amp logo" width="140px">
+        </div>
+        <div class="col-sm-8 header">
+            <h1 >Attendance &nbsp;  Management &nbsp; Portal</h1>
+        </div>
+        <div class="col-sm-2 ">
+            <img src="images/logo/abes logo.png" alt="abes logo" width="60px" class="abes-logo">
+        </div>
+      </nav>
 
+      <div class="row container col-md-6 home-menu">
+        <div class="circle">
+          <div class="hm-link" >
+            <a href="#">login</a><br><hr class="rule">
+            <a href="#">Register</a>
+          </div>
+          <div class="layer-img" id="student">
+            <img src="images/student.png" width="257px">
+          </div>
+        </div>
+
+
+        <div class="circle">
+          <div class="hm-link">
+            <a href="#">login</a><br><hr class="rule">
+            <a href="#">Register</a>
+          </div>
+          <div class="layer-img" id="faculty">
+            <img src="images/faculty.png" width="257px">
+          </div>
+        </div>
+
+
+        <div class="circle"  >
+          <div class="hm-link" id="hml-single">
+            <a href="#">login</a><br>
+          </div>
+          <div class="layer-img" id="hod">
+            <img src="images/hod.png" width="210px">
+          </div>
+
+
+        </div>
+        <div class="circle" >
+          <div class="hm-link" id="hml-single">
+            <a href="#">View<br>our team</a><br>
+            
+          </div>
+          <div class="layer-img" id="team">
+            <img src="images/team.png" width="257px">
+          </div>
+        </div>
+      </div>
+
+        
+        
+
+
+
+          
+        
+
+
+        
 
 
 
@@ -59,6 +95,46 @@
         <script type="text/javascript" src="../AMP/popper/popper.min.js"></script>
         <script type="text/javascript" src="../AMP/bootstrap/js/bootstrap.min.js"></script>
 
+        <script>
+        $( "#hod" ).hover(
+          function() {
+            
+            $("#hod").animate({left:"-200px"},2000)
+
+          }, function() {
+            $("#hod").animate({left:"-10px"},7000)
+          }
+        );
+        $( "#student" ).hover(
+          function() {
+            
+            $("#student").animate({left:"-200px"},2000)
+
+          }, function() {
+            $("#student").animate({left:"-38px"},7000)
+          }
+        );
+        $( "#faculty" ).hover(
+          function() {
+            
+            $("#faculty").animate({left:"150px"},2000)
+
+          }, function() {
+            $("#faculty").animate({left:"-38px"},7000)
+          }
+        );
+        $( "#team" ).hover(
+          function() {
+            
+            $("#team").animate({left:"150px"},2000)
+
+          }, function() {
+            $("#team").animate({left:"-38px"},7000)
+          }
+        );
+          
+        </script>
+        
     </body>
 
 </html>
