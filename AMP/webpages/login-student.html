@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+
+        <link rel="stylesheet" type="text/css" href="../jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../files/styles.css">
+        
+        
+    </head>
+
+    <body >
+        
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="col-sm-2">
+            <img src="../images/logo/amp logo1.png" alt="amp logo" width="140px">
+            </div>
+            <div class="col-sm-8 header">
+                <h1 >Attendance &nbsp;  Management &nbsp; Portal</h1>
+            </div>
+            <div class="col-sm-2 ">
+                <img src="../images/logo/abes logo.png" alt="abes logo" width="60px" class="abes-logo">
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-sm navbar-dark nav-bg">
+         
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Student
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="login-student.html">Login</a>
+                  <a class="dropdown-item" href="register-student.html">Register</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Faculty
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Login</a>
+                  <a class="dropdown-item" href="#">Register</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Head Of Department
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Login</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Our Team</a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+
+        <div class="col-md-7 right container margin-top">
+            <h1 class="white-font">Student Login </h1><br>
+            <form class="col-sm-6" method="POST" action="#" onsubmit="return validate()">
+
+                <div class="form-group ">
+                  <label for="admissionNumber" class="white-font">Admission Number</label>
+                  <input type="text" class="form-control" id="admissionNumber" aria-describedby="emailHelp" >
+                  <p class="error" id="err-adm-no"></p>
+                  
+                </div>
+                <div class="form-group">
+                  <label for="password" class="white-font">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="minimum 6 characters">
+                  <p class="error" id="err-password"></p>
+                </div>
+                
+                
+                <button type="submit" class="btn btn-primary">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-danger btn-sm" id="forgot-password">Forgot Password</button>
+              </form>
+
+              <div id="password-reset-form" class=" container ">
+                  <h3>Forgot Password</h3>
+                <form method="POST" action="#" onsubmit="">
+
+                    <div class="form-group">
+                      <label for="admissionNumber" class="white-font">Admission Number</label>
+                      <input type="text" class="form-control" id="admissionNumber" aria-describedby="emailHelp" >
+                      <p class="error" id="err-adm-no"></p>
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="dob" class="white-font">Date Of Birth</label>
+                      <input type="date" class="form-control" id="dob" >
+                      
+                    </div>
+                    
+                    
+                    <button type="submit" class="btn btn-primary btn-sm" id="reset">Reset Password</button>
+                    <button type="button" class="btn btn-danger btn-sm" id="cancel-reset-password">Cancel</button>
+
+                    
+                  </form>
+              </div>
+
+
+              <div id="reset-password" class=" container ">
+                <h3>Reset Password</h3>
+              <form >
+
+                  <div class="form-group">
+                    <label for="new-password" class="white-font">Enter New Password</label>
+                  <input type="password" class="form-control" id="new-password" placeholder="minimum 6 characters">
+                    <p class="error" id="err-adm-no"></p>
+                    
+                  </div>
+                  <div class="form-group">
+                    <label for="confirm-password" class="white-font">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirm-password" placeholder="minimum 6 characters">
+                    
+                  </div>
+                  
+                  
+                  <button type="submit" class="btn btn-primary btn-sm">Reset Password</button>
+                  
+
+                  
+                </form>
+            </div>
+
+
+
+
+        </div>
+
+
+        <script type="text/javascript" src="../jQuery/jquery.min.js"></script>
+        <script type="text/javascript" src="../jquery-ui/jquery-ui.js"></script>
+        <script type="text/javascript" src="../popper/popper.min.js"></script>
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            function validate(){
+              $("#err-adm-no").html("");
+              $("#err-password").html("");
+              var x=$("#admissionNumber").val();
+              var y=/^[0-9a-zA-Z]{11,}$/i;
+              var z=y.test(x);
+
+              if(z==false ){
+                $("#err-adm-no").html("*Enter A Valid Admission Number  !!");
+                return false;
+              }
+              else{
+                var p=$("#password").val();
+                if(p.length<6){
+                  $("#err-password").html("*Enter A Valid Password  !!");
+                  return false;
+                }
+                else{
+                  return true;
+                }
+              }
+            }
+            $("#forgot-password").click(function(){
+                $("#password-reset-form").css("display","block");
+            });
+            $("#cancel-reset-password").click(function(){
+                $("#password-reset-form").css("display","none");
+            });
+            $("#reset").click(function(){
+                $("#password-reset-form").css("display","none");
+                $("#reset-password").css("display","block");
+            });
+
+
+
+
+
+        </script>
+
+
+        
+    </body>
+    </html>

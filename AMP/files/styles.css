@@ -29,8 +29,11 @@ body {
     margin: 30px;
     
 }
-.home-menu{
+.right{
     float: right;
+}
+.left{
+    float: left;
 }
 .clear{
     clear: both;
@@ -80,3 +83,54 @@ hr.rule{
     left: -38px;
     z-index: 2;
 }
+.white-font{
+    color: white;
+    font-weight: bold;
+}
+.margin-top{
+    margin-top: 30px;
+}
+.error{
+    color: red;
+    font-size: 80%;
+    
+}
+#password-reset-form{
+    z-index: 999;
+    margin: 100px,auto,50px,auto;
+    width: 450px;
+    height: 350px;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+    
+    background-color: rgb(110, 110, 110);
+}
+#reset-password{
+    z-index: 999;
+    margin: 100px,auto,50px,auto;
+    width: 450px;
+    height: 350px;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+    
+    background-color: rgb(110, 110, 110);
+}
+.team-image{
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    
+}
+.nav-bg{
+    background-color: rgb(9, 23, 39);
+    
+}
+

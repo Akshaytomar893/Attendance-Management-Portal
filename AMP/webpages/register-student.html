@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+
+        <link rel="stylesheet" type="text/css" href="../jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../files/styles.css">
+        
+    </head>
+
+    <body >
+        
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="col-sm-2">
+            <img src="../images/logo/amp logo1.png" alt="amp logo" width="140px">
+            </div>
+            <div class="col-sm-8 header">
+                <h1 >Attendance &nbsp;  Management &nbsp; Portal</h1>
+            </div>
+            <div class="col-sm-2 ">
+                <img src="../images/logo/abes logo.png" alt="abes logo" width="60px" class="abes-logo">
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark nav-bg">
+         
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Student
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="login-student.html">Login</a>
+                    <a class="dropdown-item" href="register-student.html">Register</a>
+                  </div>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Faculty
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Login</a>
+                    <a class="dropdown-item" href="#">Register</a>
+                  </div>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Head Of Department
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Login</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html">Our Team</a>
+                </li>
+              </ul>
+              
+            </div>
+          </nav>
+
+          <div class="col-md-7 right container margin-top">
+            <h1 class="white-font">Student Registration</h1><br>
+            <form method="POST" action="#" class="white-font col-sm-6">
+                <div class="form-group " >
+                    <label for="name">Name</label>
+                    <input id="name" class="form-control " type="text" name="">
+                </div>
+                <div class="form-group ">
+                    <label for="adm-no">Admission Number</label>
+                    <input id="adm-no" class="form-control" type="text" name="">
+                </div>
+                <div class="form-group ">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" id="dob" class="form-control" type="text" name="">
+                </div>
+                <div class="form-group ">
+                    <label for="mobile">Mobile Number</label>
+                    <input id="mobile" class="form-control" type="text" name="">
+                </div>
+                <div class="form-group ">
+                    <label for="branch">Branch</label>
+                    <select id="branch" class="form-control"  name="branch" >
+                        <option>SELECT BRANCH</option>
+                        <option value="cse">CSE</option>
+                        <option value="ceit">CEIT</option>
+                        <option value="it">IT</option>
+                        <option value="ece">ECE</option>
+                        <option value="en">EN</option>
+                        <option value="me">ME</option>
+                        <option value="civil">Civil</option>
+                        <option value="mca">MCA</option>
+                        <option value="mba">MBA</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label for="branch">Branch</label>
+                    <select id="branch" class="form-control"  name="branch" >
+                        <option>SELECT Section</option>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="na">Not Applicable</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label for="password">Password</label>
+                    <input id="password" class="form-control" type="password" name="" placeholder="minimun 6 characters">
+                </div>
+                &nbsp;&nbsp;<button class="btn btn-primary" type="submit">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-warning btn-sm " type="reset">Reset</button>
+
+
+
+
+
+
+
+
+            </form>
+
+
+
+
+
+
+          <script type="text/javascript" src="../jQuery/jquery.min.js"></script>
+        <script type="text/javascript" src="../jquery-ui/jquery-ui.js"></script>
+        <script type="text/javascript" src="../popper/popper.min.js"></script>
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
