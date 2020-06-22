@@ -3,16 +3,30 @@
     color: azure;
     font-family: 'Cinzel', serif;
     
+    
 }
 
+@media only screen and (max-width: 600px) {
+    .home-page-menu{
+        align-content: center;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .home-page-menu{
+        position: relative;
+        left: -200px;
+    }
+}
 .abes-logo{
     float: right;
+    
 }
-body{
+ body{
     padding: 0px;
     margin: 0px;
     
 }
+
 body { 
     background: url("../images/background.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -26,7 +40,7 @@ body {
     width: 180px;
     border: 2px ssolid black;
     border-radius: 50%;
-    margin: 30px;
+    margin: 50px;
     
 }
 .right{
@@ -48,6 +62,23 @@ body {
     color: azure;
     font-weight: bold;
     font-size: 110%;
+}
+ .dashboard-menu a:any-link{
+    color: azure;
+    font-weight: bold;
+    font-size: 110%;
+    
+    text-align: center;
+    
+}
+.stu-dash-menu a:any-link{
+    padding: 25px 10px 25px 10px;
+}
+.fac-dash-menu a:any-link{
+    padding: 8px 10px 8px 10px !important;
+}
+.hod-dash-menu a:any-link{
+    padding: 10px 10px 10px 10px !important;
 }
 #hml-single{
     position: relative !important;
@@ -90,6 +121,7 @@ hr.rule{
 .margin-top{
     margin-top: 30px;
 }
+
 .error{
     color: red;
     font-size: 80%;
@@ -133,4 +165,24 @@ hr.rule{
     background-color: rgb(9, 23, 39);
     
 }
-
+.dashboard-background{
+    background: url("../images/background-pattern.jpg") no-repeat center center fixed !important; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.dashboard{
+    background-color: rgb(9, 23, 39);
+    border-radius: 20px;
+    margin: 20px 20px 20px 0px;
+    height: 100%;
+    display: none;
+    
+}
+.dashboard-menu-hover{
+    background-color: rgb(9, 23, 39);
+}
+#student-profile{
+    display: block ;
+}

@@ -3,12 +3,12 @@
 
     <head>
 
-        <title>Student Registartion</title>
+        <title>Faculty Registration</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         
-        <!--including bootstrap and css files-->
+        <!--bootstrap and css files-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../files/styles.css">
@@ -16,7 +16,7 @@
     </head>
 
     <body >
-      <!--top header-->
+      <!--header-->
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
         <div class="col-sm-2">
         <img src="../images/logo/amp logo1.png" alt="amp logo" width="140px">
@@ -28,7 +28,6 @@
             <img src="../images/logo/abes logo.png" alt="abes logo" width="60px" class="abes-logo">
         </div>
     </nav>
-    <!--menubar-->
     <nav class="navbar navbar-expand-sm navbar-dark nav-bg">
          
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +59,7 @@
               <a class="dropdown-item" href="register-faculty.html">Register</a>
             </div>
           </li>
-
+          <!--menubar-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Head Of Department
@@ -78,62 +77,60 @@
     </nav>
 
           <div class="col-md-7 right container margin-top">
-            <!--registraion form-->
-            <h1 class="white-font">Student Registration</h1><br>
+            <!--registarion form-->
+            <h1 class="white-font">Faculty Registration</h1><br>
             <form method="POST" action="dashboard-student.html" class="white-font col-sm-6" onsubmit="return validateForm()">
                 <div class="form-group " >
-                    <label for="name">Name</label>
-                    <input id="name" class="form-control " type="text" name="">
-                    <p class="error" id="error-name"></p>
+                    <label for="name-faculty">Name</label>
+                    <input id="name-faculty" class="form-control " type="text" name="name-faculty">
+                    <p class="error" id="error-name-faculty"></p>
                 </div>
                 <div class="form-group ">
-                    <label for="adm-no">Admission Number</label>
-                    <input id="adm-no" class="form-control" type="text" name="">
-                    <p class="error" id="error-admno"></p>
+                    <label for="id-faculty">Faculty ID</label>
+                    <input id="id-faculty" class="form-control" type="text" name="id-faculty">
+                    <p class="error" id="error-id-faculty"></p>
                 </div>
                 <div class="form-group ">
-                    <label for="dob">Date Of Birth</label>
-                    <input type="date" id="dob" class="form-control" type="text" name="">
+                    <label for="dob-faculty">Date Of Birth</label>
+                    <input type="date" id="dob-faculty" class="form-control" type="text" name="dob-faculty">
                 </div>
                 <div class="form-group ">
-                    <label for="mobile">Mobile Number</label>
-                    <input id="mobile" class="form-control" type="text" name="">
-                    <p class="error" id="error-mobile"></p>
+                    <label for="mobile-faculty">Mobile Number</label>
+                    <input id="mobile-faculty" class="form-control" type="text" name="mobile-faculty">
+                    <p class="error" id="error-mobile-faculty"></p>
                 </div>
                 <div class="form-group ">
-                    <label for="branch">Branch</label>
-                    <select id="branch" class="form-control"  name="branch" >
-                        <option>SELECT BRANCH</option>
-                        <option value="cse">CSE</option>
-                        <option value="ceit">CEIT</option>
-                        <option value="it">IT</option>
-                        <option value="ece">ECE</option>
-                        <option value="en">EN</option>
-                        <option value="me">ME</option>
-                        <option value="civil">Civil</option>
-                        <option value="mca">MCA</option>
-                        <option value="mba">MBA</option>
-                    </select>
+                    <label for="email-faculty">E mail</label>
+                    <input id="email-faculty" class="form-control" type="email" name="email-faculty">
+                    <p class="error" id="error-mobile-faculty"></p>
                 </div>
                 <div class="form-group ">
-                    <label for="section">Section</label>
-                    <select id="section" class="form-control"  name="section" >
-                        <option>Select Section</option>
-                        <option value="a">A</option>
-                        <option value="b">B</option>
-                        <option value="c">C</option>
-                        <option value="na">Not Applicable</option>
-                    </select>
+                  <label for="department">Department</label>
+                  <select id="department" class="form-control"  name="department" >
+                      <option>Select Department</option>
+                      <option value="ash-dep">AS&H Department</option>
+                      <option value="cs-dep">CS Department</option>
+                      <option value="ceit-dep">CEIT  Department</option>
+                      <option value="it-dep">IT  Department</option>
+                      <option value="ec-dep">ECE  Department</option>
+                      <option value="en-dep">EN  Department</option>
+                      <option value="me-dep">ME  Department</option>
+                      <option value="civil-dep">Civil  Department</option>
+                      <option value="mca-dep">MCA  Department</option>
+                      <option value="mba-dep">MBA  Department</option>
+                  </select>
+              </div>
+                
+                
+                <div class="form-group ">
+                    <label for="password-faculty">Password</label>
+                    <input id="password-faculty" class="form-control" type="password" name="password-faculty" placeholder="minimun 6 characters">
+                    <p class="error" id="error-password-faculty"></p>
                 </div>
                 <div class="form-group ">
-                    <label for="password">Password</label>
-                    <input id="password" class="form-control" type="password" name="" placeholder="minimun 6 characters">
-                    <p class="error" id="error-password"></p>
-                </div>
-                <div class="form-group ">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input id="confirm-password" class="form-control" type="password" name="" placeholder="re-type your password">
-                    <p class="error" id="error-confirm-password"></p>
+                    <label for="confirm-password-faculty">Confirm Password</label>
+                    <input id="confirm-password-faculty" class="form-control" type="password" name="confirm-password-faculty" placeholder="re-type your password">
+                    <p class="error" id="error-confirm-password-faculty"></p>
                 </div>
                 &nbsp;&nbsp;<button class="btn btn-primary" type="submit">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="btn btn-warning btn-sm " type="reset">Reset</button>
@@ -158,9 +155,9 @@
             var z1=regName.test(name);
             return z1;
           }
-          function validateAdmNo(admNo){
-            var regAdmNo= /^[0-9a-zA-Z]{11,}$/i
-            var z2=regAdmNo.test(admNo);
+          function validateFacultyID(id){
+            var regID= /^[0-9]{3,}$/i
+            var z2=regID.test(id);
             return z2;
           }
           function validateMobile(mobile){
@@ -190,36 +187,36 @@
 
           function validateForm(){
             var c=0;
-            var y1= validateName($("#name").val());
-            var y2= validateAdmNo($("#adm-no").val());
-            var y3= validateMobile($("#mobile").val());
-            var y4= validatePassword($("#password").val());
-            var y5= confirmPassword($("#password").val() , $("#confirm-password").val());
+            var y1= validateName($("#name-faculty").val());
+            var y2= validateFacultyID($("#id-faculty").val());
+            var y3= validateMobile($("#mobile-faculty").val());
+            var y4= validatePassword($("#password-faculty").val());
+            var y5= confirmPassword($("#password-faculty").val() , $("#confirm-password-faculty").val());
 
-            $("#error-name").html("");
-            $("#error-admno").html("");
-            $("#error-mobile").html("");
-            $("#error-password").html("");
-            $("#error-confirm-password").html("");
+            $("#error-name-faculty").html("");
+            $("#error-id-faculty").html("");
+            $("#error-mobile-faculty").html("");
+            $("#error-password-faculty").html("");
+            $("#error-confirm-password-faculty").html("");
 
             if(!y1){
-              $("#error-name").html("Invalid Name Credential");
+              $("#error-name-faculty").html("Invalid Name Credential");
               c++;
             }
             if(!y2){
-              $("#error-admno").html("Invalid Admission Number");
+              $("#error-id-faculty").html("Invalid Faculty Id");
               c++;
             }
             if(!y3){
-              $("#error-mobile").html("Invalid Mobile");
+              $("#error-mobile-faculty").html("Invalid Mobile");
               c++;
             }
             if(!y4){
-              $("#error-password").html("Invalid Password");
+              $("#error-password-faculty").html("Invalid Password");
               c++;
             }
             if(!y5){
-              $("#error-confirm-password").html("Passwords did not match");
+              $("#error-confirm-password-faculty").html("Passwords did not match");
               c++;
             }
             if(c==0){

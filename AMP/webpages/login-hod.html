@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         
-        <!--bootstrap and csss files inclusion-->
+        <!--including bootstrap and css fils-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../files/styles.css">
@@ -17,8 +17,8 @@
     </head>
 
     <body >
-      <!--header-->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--header-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
             <div class="col-sm-2">
             <img src="../images/logo/amp logo1.png" alt="amp logo" width="140px">
             </div>
@@ -29,7 +29,7 @@
                 <img src="../images/logo/abes logo.png" alt="abes logo" width="60px" class="abes-logo">
             </div>
         </nav>
-        <!--menubar-->
+        <!--menu-bar-->
         <nav class="navbar navbar-expand-sm navbar-dark nav-bg">
          
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,35 +80,34 @@
 
         <div class="col-md-7 right container margin-top">
           <!--login form-->
-            <h1 class="white-font">Student Login </h1><br>
+            <h1 class="white-font">HOD Login </h1><br>
             <form class="col-sm-6" method="POST" action="dashboard-student.html" onsubmit="return validate()">
 
                 <div class="form-group ">
-                  <label for="admissionNumber" class="white-font">Admission Number</label>
-                  <input type="text" class="form-control" id="admissionNumber" aria-describedby="emailHelp" >
-                  <p class="error" id="err-adm-no"></p>
+                  <label for="hod-id" class="white-font">HOD ID</label>
+                  <input type="text" class="form-control" id="hod-id" >
+                  <p class="error" id="err-hod-id"></p>
                   
                 </div>
                 <div class="form-group">
-                  <label for="password" class="white-font">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="minimum 6 characters">
-                  <p class="error" id="err-password"></p>
+                  <label for="password-hod" class="white-font">Password</label>
+                  <input type="password" class="form-control" id="password-hod" placeholder="minimum 6 characters">
+                  <p class="error" id="err-password-hod"></p>
                 </div>
                 
                 
                 <button type="submit" class="btn btn-primary">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
                 <button type="button" class="btn btn-danger btn-sm" id="forgot-password">Forgot Password</button>
               </form>
-
+              <!--forgot password form-->
               <div id="password-reset-form" class=" container ">
-                <!--forgot password form-->
                   <h3>Forgot Password</h3>
                 <form method="POST" action="#" onsubmit="">
 
                     <div class="form-group">
-                      <label for="admissionNumber" class="white-font">Admission Number</label>
-                      <input type="text" class="form-control" id="admissionNumber" aria-describedby="emailHelp" >
-                      <p class="error" id="err-adm-no"></p>
+                      <label for="hod-id" class="white-font">HOD ID</label>
+                      <input type="text" class="form-control" id="hod-id"  >
+                      <p class="error" id="err-hod-id"></p>
                       
                     </div>
                     <div class="form-group">
@@ -131,9 +130,9 @@
               <form >
 
                   <div class="form-group">
-                    <label for="new-password" class="white-font">Enter New Password</label>
-                  <input type="password" class="form-control" id="new-password" placeholder="minimum 6 characters">
-                    <p class="error" id="err-adm-no"></p>
+                    <label for="new-password-hod" class="white-font">Enter New Password</label>
+                  <input type="password" class="form-control" id="new-password-hod" placeholder="minimum 6 characters">
+                    <p class="error" id="err-password-hod"></p>
                     
                   </div>
                   <div class="form-group">
@@ -157,20 +156,20 @@
 
         <!--including javascript files-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        
-    <!--js code-->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      
+      <!--js code-->
         <script>
             function validate(){
-              $("#err-adm-no").html("");
-              $("#err-password").html("");
-              var x=$("#admissionNumber").val();
-              var y=/^[0-9a-zA-Z]{11,}$/i;
+              $("#err-hod-id").html("");
+              $("#err-password-hod").html("");
+              var x=$("#hod-id").val();
+              var y=/^[0-9]{3,}$/i;
               var z=y.test(x);
 
               if(z==false ){
-                $("#err-adm-no").html("*Enter A Valid Admission Number  !!");
+                $("#err-hod-id").html("*Enter A Valid ID  !!");
                 return false;
               }
               else{

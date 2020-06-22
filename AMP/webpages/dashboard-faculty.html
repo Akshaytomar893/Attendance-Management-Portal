@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Faculty Dashboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <!--including bootstrap and css files-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../files/styles.css">
+        
+        
+    </head>
+
+    <body class="dashboard-background" >
+      <!--header-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="col-sm-2">
+            <img src="../images/logo/amp logo1.png" alt="amp logo" width="140px">
+            </div>
+            <div class="col-sm-8 header">
+                <h1 >Attendance &nbsp;  Management &nbsp; Portal</h1>
+            </div>
+            <div class="col-sm-2 ">
+                <img src="../images/logo/abes logo.png" alt="abes logo" width="60px" class="abes-logo">
+            </div>
+        </nav>
+        <!--menubar-->
+        <nav class="navbar navbar-expand-sm navbar-dark nav-bg">
+         
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Student
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="login-student.html">Login</a>
+                  <a class="dropdown-item" href="register-student.html">Register</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Faculty
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="login-faculty.html">Login</a>
+                  <a class="dropdown-item" href="register-faculty.html">Register</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Head Of Department
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="login-hod.html">Login</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Our Team</a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-sm-2">
+              <!--dashboard menu-->
+                <nav class=" navbar-expand-sm  dashboard-menu fac-dash-menu navbar-dark ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#SupportedContent" aria-controls="SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse"  id="SupportedContent">
+                        <ul class="nav flex-sm-column  ">
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="mark-attendance" >
+                                <a class="nav-link " href="#" >Mark Attendance </a>
+                                </div>
+                            </li>
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="view-attendance" >
+                                <a class="nav-link " href="#" >View Attendance </a>
+                                </div>
+                            </li>
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="edit-attendance" >
+                                <a class="nav-link " href="#" >Edit Attendance </a>
+                                </div>
+                            </li>
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="upload-notice" >
+                                <a class="nav-link " href="#" >Upload Notice</a>
+                                </div>
+                            </li>
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="notification-faculty">
+                                <a class="nav-link " href="#">Notifications</a>
+                                </div>
+                            </li>
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="add-student" >
+                                <a class="nav-link " href="#" >Add Student </a>
+                                </div>
+                            </li>
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="remove-student" >
+                                <a class="nav-link " href="#" >Remove Student</a>
+                                </div>
+                            </li>
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="view-profile-faculty" >
+                                <a class="nav-link " href="#" >View Profile </a>
+                                </div>
+                            </li>
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="edit-profile-faculty" >
+                                <a class="nav-link " href="#" >Edit Profile</a>
+                                </div>
+                            </li>
+                            
+                            
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="change-password-faculty" >
+                                <a class="nav-link " href="#">Change Password</a>
+                                </div>
+                            </li>
+                            <li class="nav-item border border-dark rounded dashboard-menu-hover">
+                                
+                                <div id="logout" >
+                                <a class="nav-link " href="#">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-sm-10">
+                <div class="dashboard" id="mark-attendance-section" >
+                    <h2 class="white-font text-center" >Mark Attendance</h2>
+                </div>
+                <div class="dashboard" id="view-attendance-section" >
+                    <h2 class="white-font text-center" >View Attendance</h2>
+                </div>
+                <div class="dashboard" id="edit-attendance-section" >
+                    <h2 class="white-font text-center" >Edit Attendance</h2>
+                </div>
+                <div class="dashboard" id="notice-section" >
+                    <h2 class="white-font text-center" >Upload Notice</h2>
+                </div>
+                <div class="dashboard" id="notification-section" >
+                    <h2 class="white-font text-center" >Notificaions</h2>
+                </div>
+                <div class="dashboard" id="add-student-section" >
+                  <h2 class="white-font text-center" >Add Student</h2>
+              </div>
+              <div class="dashboard" id="remove-student-section" >
+                <h2 class="white-font text-center" >Remove Student</h2>
+              </div>
+              <div class="dashboard" id="view-profile-section" >
+                <h2 class="white-font text-center" >Profile</h2>
+            </div>
+            <div class="dashboard" id="edit-profile-section" >
+              <h2 class="white-font text-center" >Edit Profile</h2>
+            </div>
+            <div class="dashboard" id="change-password-section" >
+              <h2 class="white-font text-center" >Change Password</h2>
+          </div>
+          <div class="dashboard" id="logout-section" >
+            
+        </div>
+
+
+                
+            </div>
+        </div>
+
+
+
+
+
+        <!--including js files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      
+      <!--js code-->
+        <script>
+
+          function menuHide(){
+            $("#mark-attendance-section").css("display","none");
+            $("#view-attendance-section").css("display","none");
+            $("#edit-attendance-section").css("display","none");
+            $("#notice-section").css("display","none");
+            $("#notification-section").css("display","none");
+            $("#add-student-section").css("display","none");
+            $("#remove-student-section").css("display","none");
+            $("#view-profile-section").css("display","none");
+            $("#edit-profile-section").css("display","none");
+            $("#change-password-section").css("display","none");
+          }
+
+
+          
+          $("#mark-attendance").click(function(){
+             menuHide();
+            $("#mark-attendance-section").css("display","block");
+          });
+          $("#view-attendance").click(function(){
+             menuHide();
+            $("#view-attendance-section").css("display","block");
+          });
+          $("#edit-attendance").click(function(){
+             menuHide();
+            $("#edit-attendance-section").css("display","block");
+          });
+          $("#upload-notice").click(function(){
+             menuHide();
+            $("#notice-section").css("display","block");
+          });
+          $("#notification-faculty").click(function(){
+             menuHide();
+            $("#notification-section").css("display","block");
+          });
+          $("#add-student").click(function(){
+             menuHide();
+            $("#add-student-section").css("display","block");
+          });
+          $("#remove-student").click(function(){
+             menuHide();
+            $("#remove-student-section").css("display","block");
+          });
+          $("#view-profile-faculty").click(function(){
+             menuHide();
+            $("#view-profile-section").css("display","block");
+          });
+          $("#edit-profile-faculty").click(function(){
+             menuHide();
+            $("#edit-profile-section").css("display","block");
+          });
+          $("#change-password-faculty").click(function(){
+             menuHide();
+            $("#change-password-section").css("display","block");
+          });
+          
+          
+          
+
+          $(".dashboard-menu-hover").hover(
+            function() {
+              
+              $(this).css("background-color","rgb(48,70,95)")
+
+            }, function() {
+              $(this).css("background-color","rgb(9, 23, 39)")
+            }
+          );
+
+        </script>
+
+
+  </body>
+</html>
