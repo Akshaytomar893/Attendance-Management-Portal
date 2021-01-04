@@ -72,10 +72,10 @@ body {
     
 }
 .stu-dash-menu a:any-link{
-    padding: 25px 10px 25px 10px;
+    padding: 25px 10px 25px 10px !important;
 }
 .fac-dash-menu a:any-link{
-    padding: 8px 10px 8px 10px !important;
+    padding: 8px 20px 8px 20px !important;
 }
 .hod-dash-menu a:any-link{
     padding: 10px 10px 10px 10px !important;
@@ -131,7 +131,7 @@ hr.rule{
     z-index: 999;
     margin: 100px,auto,50px,auto;
     width: 450px;
-    height: 350px;
+    height: auto;
     border: 3px solid black;
     border-radius: 10px;
     display: none;
@@ -141,20 +141,7 @@ hr.rule{
     
     background-color: rgb(110, 110, 110);
 }
-#reset-password{
-    z-index: 999;
-    margin: 100px,auto,50px,auto;
-    width: 450px;
-    height: 350px;
-    border: 3px solid black;
-    border-radius: 10px;
-    display: none;
-    padding: 20px;
-    position: absolute;
-    top: 0px;
-    
-    background-color: rgb(110, 110, 110);
-}
+
 .team-image{
     width: 200px;
     border: 2px solid black;
@@ -180,9 +167,26 @@ hr.rule{
     display: none;
     
 }
+
 .dashboard-menu-hover{
     background-color: rgb(9, 23, 39);
 }
 #student-profile{
     display: block ;
 }
+.alert-danger{
+    width: 400px !important;
+}
+h4{
+    margin:40px 40px 30px 60px !important;
+}
+table , th , td{
+    border:2px solid black !important;
+    padding: 5px 20px 5 px 20px !important;
+    margin: 5px 20px 5 px 20px !important;
+}
+table{
+    width:70% !important;
+    text-align: center;
+}
+
